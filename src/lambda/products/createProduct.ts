@@ -12,7 +12,7 @@ const s3Client = new S3Client({})
 
 // Environment variables
 const PRODUCTS_TABLE_NAME = process.env.PRODUCTS_TABLE_NAME!
-const PRODUCT_IMAGES_BUCKET_NAME = process.env.PRODUCT_IMAGES_BUCKET_NAME!
+const PRODUCT_IMAGES_BUCKET_NAME = process.env.IMAGES_BUCKET_NAME!
 
 export const handler = async (event: APIGatewayProxyEventV2): Promise<APIGatewayProxyResultV2> => {
     console.log('Event received:', JSON.stringify(event, null, 2))
